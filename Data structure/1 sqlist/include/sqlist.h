@@ -1,15 +1,18 @@
 ﻿#ifndef _SQLIST_H_
 #define _SQLIST_H_
 
+#include <iostream>
+#include "star.h"
+
 using std::cin;
 using std::cout;
 using std::endl;
 
-#define SQLIST_MAX_SIZE		32
+#define SQLIST_MAX_SIZE		99
 
 typedef unsigned int sqlist_uint_t;
 typedef int sqlist_int_t;
-typedef int elem_type;
+//typedef unsigned elem_type;
 
 typedef struct {
 	elem_type *elems;
@@ -27,8 +30,5 @@ sqlist_int_t modify_elem_sqlist(sqlist &l, const sqlist_uint_t pos, const elem_t
 elem_type get_elem_sqlist(sqlist &l, sqlist_uint_t pos);
 void traversal_sqlist(const sqlist &l);
 void destroy_sqlist(sqlist &l);
-
-
-
 
 #endif // !_SQLIST_H_

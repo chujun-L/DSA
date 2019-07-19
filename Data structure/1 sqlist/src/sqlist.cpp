@@ -106,6 +106,7 @@ sqlist_int_t modify_elem_sqlist(sqlist &l, const sqlist_uint_t pos, const elem_t
 	return -1;
 }
 
+#if 0
 elem_type get_elem_sqlist(sqlist &l, sqlist_uint_t pos)
 {
 	if (is_empty_sqlist(l)) {
@@ -131,6 +132,7 @@ void traversal_sqlist(const sqlist &l)
 	}
 	cout << endl;
 }
+#endif
 
 void destroy_sqlist(sqlist &l)
 {
