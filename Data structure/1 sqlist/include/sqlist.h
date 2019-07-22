@@ -2,7 +2,8 @@
 #define _SQLIST_H_
 
 #include <iostream>
-#include "star.h"
+//#include "star.h"
+#include "webserver.h"
 
 using std::cin;
 using std::cout;

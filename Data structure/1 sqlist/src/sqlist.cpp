@@ -121,18 +121,19 @@ elem_type get_elem_sqlist(sqlist &l, sqlist_uint_t pos)
 	cout << "out of sqlist length's range" << endl;
 	return -1;
 }
-
+#endif
 
 void traversal_sqlist(const sqlist &l)
 {
 	sqlist_uint_t i;
 
 	for (i = 0; i < l.length; ++i) {
-		cout << l.elems[i] << " ";
+		cout << "fd: " << l.elems[i].fd << " " \
+			<< "timeout: " << l.elems[i].timeout << endl;
 	}
 	cout << endl;
 }
-#endif
+
 
 void destroy_sqlist(sqlist &l)
 {
