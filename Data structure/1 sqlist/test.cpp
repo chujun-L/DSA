@@ -28,8 +28,12 @@ void draw_screen(sqlist &l)
 
 void count_num_sqlist(sqlist &l)
 {
+	//char count[16];
+
+	//sprintf(count, "%d", l.length);
 	outtextxy(130, 380, l.length / 10 + '0');
 	outtextxy(150, 380, l.length % 10 + '0');
+	//outtextxy(130, 380, count);
 }
 
 void move_star(sqlist &l)
