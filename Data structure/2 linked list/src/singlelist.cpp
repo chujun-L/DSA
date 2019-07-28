@@ -135,6 +135,26 @@ singleList *singleListMerge(singleList *head1, singleList *head2)
 	return head1;
 }
 
+bool singleListCheckCycle(singleList *head)
+{
+	singleList *fast, *slow;
+
+	if (!head || !head->next) {
+		return false;
+	}
+
+	fast = slow = head;
+	while (slow != NULL && fast->next != NULL) {
+		slow = slow->next;
+		fast = fast->next->next;
+		if (slow == fast) {
+			return true;
+		}
+	}
+
+	return false;
+}
+
 void singleListTraverse(singleList *head)
 {
 	singleList *p;

@@ -13,6 +13,7 @@ void singleListDelNode(singleList *head, int index);
 singleList *singleListDestroy(singleList *head);
 singleList *singleListRewind(singleList *head);
 singleList *singleListMerge(singleList *head1, singleList *head2);
+bool singleListCheckCycle(singleList *head);
 void singleListTraverse(singleList *head);
 
 #endif
